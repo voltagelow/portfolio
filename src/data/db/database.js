@@ -5,7 +5,7 @@ const database = {
     name: "Shubham Joshi",
     aboutContent:
       "I am a full stack developer. Currently working as tech lead for a renowned austrakian banking service .I have experience in building scalable application , deploying and managing",
-    age: 24,
+    age: 31,
     phone: "",
     nationality: "Indian",
     language: "English, Hindi",
@@ -24,7 +24,7 @@ const database = {
     brandImage: "/images/brand-image.jpg",
     aboutImage: "/images/about-image.jpg",
     aboutImageLg: "/images/about-image-lg.jpg",
-    cvfile: "/Users/shubhamjoshi/Downloads/shubham_joshi_SDE_Data.pdf",
+    cvfile: "/files/shubham_joshi_Data_Engineer.pdf",
   },
   services: [
     {

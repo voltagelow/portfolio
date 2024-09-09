@@ -92,9 +92,7 @@ function About() {
                     I am <span className="color-theme">{information.name}</span>
                   </h3>
                   <p>
-                    I am a frontend web developer. I can provide clean code and
-                    pixel perfect design. I also make website more & more
-                    interactive with web animations.
+                  I am a full stack developer. Currently working as tech lead for a renowned austrakian banking service .I have experience in building scalable application , deploying and managing.
                   </p>
                   <ul>
                     {!information.name ? null : (
