@@ -13,6 +13,7 @@ function Resumes() {
   const [skills, setSkills] = useState([]);
   const [workingExperience, setWorkingExperience] = useState([]);
   const [educationExperience, setEducationExperience] = useState([]);
+  const [courses, setCourses] = useState([]);
 
   useEffect(() => {
     axios.get("/api/skills").then((response) => {
@@ -21,16 +22,17 @@ function Resumes() {
     axios.get("/api/experience").then((response) => {
       setWorkingExperience(response.data.workingExperience);
       setEducationExperience(response.data.educationExperience);
+      setCourses(response.data.courses);
     });
   }, []);
 
   return (
     <Layout>
       <Helmet>
-        <title>Resume - Chester React Personal Portfolio Template</title>
+        <title>Resume - Shubham's Personal Portfolio </title>
         <meta
           name="description"
-          content="Chester React Personal Portfolio Template Resume Page"
+          content="Shubham's Personal Portfolio"
         />
       </Helmet>
       <Suspense fallback={<Spinner />}>
@@ -66,6 +68,13 @@ function Resumes() {
             <div className="mi-resume-wrapper">
               {educationExperience.map((educatonExp) => (
                 <Resume key={educatonExp.id} resumeData={educatonExp} />
+              ))}
+            </div>
+            <div className="mt-30"></div>
+            <Smalltitle title="Courses" icon="book" />
+            <div className="mi-resume-wrapper">
+              {courses.map((course) => (
+                <Resume key={course.id} resumeData={course} />
               ))}
             </div>
           </div>

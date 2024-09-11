@@ -28,76 +28,81 @@ const database = {
   },
   services: [
     {
-      title: "Web Design",
-      icon: "brush-alt",
+      title: "Full Stack Engineer",
+      icon: "code",
       details:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.",
+        "",
     },
     {
       title: "Web Development",
-      icon: "code",
+      icon: "website",
       details:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.",
+        "",
     },
     {
-      title: "Mobile Application",
-      icon: "mobile",
+      title: "Big Data",
+      icon: "files",
       details:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.",
+        "",
     },
+    {
+      title: "One on One Interview Prep",
+      icon: "handshake",
+      details:
+        "",
+    },
+    {
+      title: "Portfolio/CV building",
+      icon: "empty-file",
+      details:
+        "",
+    }
   ],
   reviews: [
     {
       id: 1,
       content:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam, aliquid maxime tempora.",
+        "Assisted in building a data pipeline on GCP using Dataflow. Great experience working with him, and I’d gladly do so again in the future",
       author: {
-        name: "Burdette Turner",
-        designation: "Web Developer, Abc Company",
-      },
+        name: "Sarath",
+        designation: "Web Developer, Consultant",
+      }
     },
-    {
-      id: 2,
-      content:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita impedit nobis tempore quaerat quibusdam.",
-      author: {
-        name: "Susan Yost",
-        designation: "Client",
-      },
-    },
-    {
-      id: 3,
-      content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-      author: {
-        name: "Irving Feeney",
-        designation: "Fiverr Client",
-      },
-    },
+      {
+        id: 2,
+        content:
+          "Guided me in choosing the right career path when I was overwhelmed by the numerous technologies and stacks available.",
+        author: {
+          name: "Nitin Bhatt",
+          designation: "college grad , IIIT BTech CSE",
+        }
+  
+  }
   ],
   skills: [
     {
-      title: "HTML5",
-      value: 95,
-    },
-    {
-      title: "CSS3",
+      title: "Python",
       value: 90,
     },
     {
-      title: "Javascript",
-      value: 70,
-    },
-    {
-      title: "jQuery",
-      value: 85,
-    },
-    {
-      title: "ReactJS",
+      title: "Java",
       value: 80,
     },
     {
-      title: "Photoshop",
-      value: 65,
+      title: "PySpark",
+      value: 70,
+    },
+    {
+      title: "Java Spring Boot",
+      value: 80,
+    },
+    {
+      title: "React",
+      value: 60,
+    },
+    {
+      title: "SQL",
+      value: 70,
     },
   ],
   portfolios: [
@@ -287,55 +292,91 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
-        position: "Frontend Web Developer",
-        company: "Abc Company",
+        year: "2021 - Present",
+        position: "Full Stack Engineer",
+        company: "ANZ Company",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          `• Collaborated with the product and business team to understand requirements and business specifications about application, analytics and risk
+           • Built Backend/Hadoop component for internal payment application.
+           • CI/CD pipelines using Bamboo.
+           • Used Kubernetes for deploying frontend/backend to openshift and helm charts for
+             packaging.
+           • Used pyspark for writing complex batch processing jobs and oozie coordinators for
+             orchestration.
+           • SAMl and ADFS integration for SSO and authentication.`
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
+        year: "2019 - 2021",
+        position: "Data Engineer at Capgemini Invent",
+        company: "Client: SessionM - a customer engagement and loyalty platform",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          `• Developed ETL pipelines for massive data transformation using Apache NIFI
+           • Developed highly scalable API on AWS lambda leveraging Dynamo DB, Athena
+           • Built schedulers to pull incremental data from various clients into our platform
+           • Python script to generate reports, analysis`
       },
       {
         id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
+        year: "2017 - 2019",
+        position: "Data/Machine learning Engineer",
+        company: "Hudson Data",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
+          `<strong>Data Engineering
+          • Developed ETL pipeline for both streaming and batch processing using Apache BEAM, Airflow, Spark-Streaming, PySpark
+          • Developed and hosted APIs for credit report parsing on Google's App Engine.
+          • Created, scheduled, monitored data migration workflows using Apache Airflow
+          <strong>Machine Learning
+          • Feature Selection -> Used a variety of techniques such as forward selection, Genetic Algorithm, variable importance from a model on H2O AI
+          • Building Models -> Build Decision trees,GBM, GLM, Random Forest, XG Boost, using python API for H2O and H2O Flow
+          • Model Tuning -> Using Grid Search in GBM to tune
+          • Model Monitoring -> Various techniques like PSI, KS, IV, AUC to check model &
+          population stability
+          • Visualization -> Used DOMO for creating various reports and model monitoring`,
       },
+      {id: 4,
+        year: "2016 - 2017",
+        position: "DevOps Engineer ",
+        company: "Overcart",
+        details:
+          `
+          • Develop scripts to automate deployment, administration, and monitoring of this large scale Linux environment
+          • Ansible playbook for code deployment and Tower for managing inventory/resources
+          • Setup company-wide used reporting module on Metabase and Nginx/Application log visualization on Kibana
+          • Setting up auto scaling groups , alarms and alerts, AWS Lambda and APIGateway for micro services
+          • Significant Cost and Resource Optimization
+          • Datapipelines for migrating data from various sources to datawarehouse for reporting
+          • Developed various Reports/Dashboards on top it for different departments
+          `
+
+
+      }
     ],
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
-        graduation: "Master of Science",
-        university: "Abc University",
+        year: "2011 - 2015",
+        graduation: "Bachelors in technology, Computer Science",
+        university: "IIIT JABALPUR",
         details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
-      },
-      {
-        id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
-        details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
-      },
-      {
-        id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
-        details:
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro.",
-      },
+          "CGPA : 7.8",
+      }
     ],
+    courses:[
+      {
+        id:1,
+        year: "2018-2020",
+        coursename: "GCP - Professional Data Engineer",
+        details: ""
+      },
+      {
+        id:2,
+        year: "2015-2016",
+        coursename: "Internship @ S&P Global",
+        details: ""
+      }
+    ]
+    ,
   },
   blogs: [
     {
