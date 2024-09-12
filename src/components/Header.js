@@ -76,9 +76,9 @@ function Header() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://nuclearthemes.com"
+              href=""
             >
-              NuclearThemes
+              Shubham's Portfolio template
             </a>
           </b>
         </p>
